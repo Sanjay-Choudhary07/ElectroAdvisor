@@ -1,5 +1,37 @@
 .App {
   display: flex;
   flex-direction: column;
+  height: 100vh;
+  background-color: #141416;
 }
+.main-content {
+  display: flex;
+  flex-direction: row;
+  height: calc(100vh - 60px); 
+}
+.sidebar {
+  flex: 0 0 80px; 
+}
+.content-area {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 20px;
+}
+.product-details-box {
+  margin-bottom: 20px; 
+}
+.row-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.tabs-container {
+  flex: 1;
+  margin-right: 20px; 
+}
+.repair-services {
+  flex: 2; 
+}
+
 
