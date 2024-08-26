@@ -1,0 +1,38 @@
+body .tabs-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    /* width: 334px !important ;  */
+    border: 1px solid #353535;
+    border-radius: 8px;
+    background-color: #1c1c1e;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    flex-basis: 320px;
+    flex-grow: 0;
+    height: 630px;
+  }
+  .tabb {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; 
+  }
+  .tab-item {
+    font-weight: 600;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  .tab-item:hover {
+    color: #f39c12;
+    background-color: #353535;
+  }
+  .active {
+    background-color: #353535;
+    color: #f39c12;
+  }
+  .pre-purchase, .post-purchase {
+    margin-left: 40px; 
+  }
