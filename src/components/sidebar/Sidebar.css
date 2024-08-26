@@ -1,40 +1,37 @@
 .sidebar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    height: 100vh;
-    width: 50px;
-    margin-top: -60px;
-    border-right:1px solid #353535 ;
-  }
-  
-  .logo img {
-    width: 60px;
-    margin-bottom: 50px; 
-  }
-  .icons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px; 
-  }
-  
-  .bottom-icons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: auto;
-    gap: 30px; 
-  }
-  
-  .icons img,
-  .bottom-icons img {
-    width: 30px; 
-    cursor: pointer;
-  }
-  .right{
-    width: 20px;
-    height: 30px;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  height: 850px;
+  width: 50px;
+  margin-top: -60px;
+  background-color: #141416;
+  border-right:1px solid #353535 ;
+} 
+.logo img {
+  width: 60px;
+  margin-bottom: 50px; 
+}
+.icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px; 
+}
+.bottom-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: auto;
+  gap: 30px; 
+}
+.icons img,
+.bottom-icons img {
+  width: 30px; 
+  cursor: pointer;
+}
+.right{
+  width: 20px;
+  height: 30px;
+}

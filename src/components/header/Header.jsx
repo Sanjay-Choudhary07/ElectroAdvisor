@@ -4,10 +4,8 @@ import left from '../../assets/left_arrow.png';
 import notification from '../../assets/notification.png';
 import ellipse from '../../assets/ellipse.png';
 import vector from '../../assets/vector.png';
-// import horizontal from '../../assets/horizontal_line.png'
 function Header() {
   return (
-    // <div className='head'>
       <div className="header">
         <div className="header-left">
           <img src={left} alt="Back Arrow" className="icon arrow" />
@@ -32,10 +30,6 @@ function Header() {
           </div>
         </div>
       </div>
-     /* <div>
-    <img src={horizontal} className='horizontal'/>
-    </div> */
-    // </div>
   );
 }
 
