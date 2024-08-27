@@ -46,6 +46,7 @@
     padding-bottom: 5px;
     position: relative;
     margin-left: -24px;
+    background: none;
   }
   .tab.active::after {
     content: '';

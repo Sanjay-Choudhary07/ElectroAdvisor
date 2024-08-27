@@ -6,7 +6,7 @@ import ellipse from '../../assets/ellipse.png';
 import vector from '../../assets/vector.png';
 function Header() {
   return (
-      <div className="header">
+      <header className="header">
         <div className="header-left">
           <img src={left} alt="Back Arrow" className="icon arrow" />
           <span className="title">Product Information</span>
@@ -29,7 +29,7 @@ function Header() {
             <img src={vector} alt="Vector Icon" className="icon vector" />
           </div>
         </div>
-      </div>
+      </header>
   );
 }
 
