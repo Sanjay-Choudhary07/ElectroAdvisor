@@ -19,6 +19,7 @@ function App() {
             <div className="row-area">
               <Tabs />
               <Routes>
+                <Route path='/' element={<Services/>}/>
                 <Route path="/Queries/Repair" element={<Services />} />
                 <Route path="/Queries/Replacement" element={<Services />} />
                 <Route path="/Queries/Safety" element={<Services />} />
