@@ -7,8 +7,22 @@ import plus from '../../assets/plus_icon.png';
 
 const Services = () => {
   const location = useLocation();
+  const [additionalQuestions, setAdditionalQuestions] = useState([]);
 
   const isActive = (path) => location.pathname === path;
+  const handleAddQuestion = () => {
+    setAdditionalQuestions([...additionalQuestions, { question: '', answer: '' }]);
+  };
+
+  const handleAdditionalInputChange = (index, field, value) => {
+    const updatedQuestions = additionalQuestions.map((q, i) => {
+      if (i === index) {
+        return { ...q, [field]: value };
+      }
+      return q;
+    });
+    setAdditionalQuestions(updatedQuestions);
+  };  
 
   const [answers, setAnswers] = useState({
     answer1: '',
@@ -89,10 +103,30 @@ const Services = () => {
             value={answers.answer5}
             onChange={(event) => handleInputChange(event, 'answer5')}/>
         </div>
+
+        {additionalQuestions.map((q, index) => (
+          <div key={index} className="question-section">
+            <div className="question">
+              <input 
+                type="text"
+                placeholder="Type the question here"
+                value={q.question}
+                onChange={(e) => handleAdditionalInputChange(index, 'question', e.target.value)}
+              />
+            </div>
+            <div className="answer">Answer</div>
+            <input
+              type="text"
+              placeholder="Type the answer here"
+              value={q.answer}
+              onChange={(e) => handleAdditionalInputChange(index, 'answer', e.target.value)}
+            />
+          </div>
+        ))}
         <div className="add-more-section">
            <div className='plus'>
              <img src={plus} alt="Add Icon" />
-             <span className='add-more'>Add more questions</span>
+             <button onClick={handleAddQuestion} className='add-more'>Add more questions</button>
            </div>
           <div className='add'>
             <button onClick={handleAddAssets}>Add Assets</button>
